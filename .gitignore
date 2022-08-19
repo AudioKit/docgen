@@ -1,0 +1,15 @@
+.DS_Store
+.build
+Packages
+*.xcodeproj
+xcuserdata/
+DerivedData/
+.netrc
+.swiftpm
+Package.resolved
+
+# This is where we output documentation.
+output
+
+# For the VS Code fans.
+.vscode
