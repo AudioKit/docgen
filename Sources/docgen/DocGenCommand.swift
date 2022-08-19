@@ -17,7 +17,10 @@ struct DocGenCommand: ParsableCommand {
     ///
     /// Each product in this array should correspond to products within dependencies in Package.swift.
     /// Multiple products can be output from a specific package, so every product must be listed independently.
-    private var products: [String] = []
+    private var products: [String] = [
+        "AudioKit",
+        "PianoRoll",
+    ]
     
     init() {}
     
