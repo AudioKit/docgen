@@ -8,7 +8,7 @@ To generate documentation, simply clone this repository and run the following co
 swift run docgen <product> <product> <product> ... --output <output_directory>
 ```
 
-Example:
+This example will generate a `.doccarchive` for the `AudioKit` and `PianoRoll` _products_ from their respective packages and output to the `./output` directory.
 
 ```sh
 swift run docgen AudioKit PianoRoll --output output

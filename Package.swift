@@ -3,9 +3,6 @@ import PackageDescription
 
 let package = Package(
     name: "AudioKitDocs",
-    platforms: [
-       .macOS(.v11),
-    ],
     dependencies: [
         .package(url: "https://github.com/bdrelling/docgen", from: "0.1.6"),
         // Add packages you wish to generate documentation for here.
