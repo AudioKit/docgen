@@ -2,7 +2,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "DocGen",
+    name: "docgen",
     platforms: [
        .macOS(.v12)
     ],
