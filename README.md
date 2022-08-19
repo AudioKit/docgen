@@ -11,5 +11,5 @@ swift run docgen <product> <product> <product> ... --output <output_directory>
 Example:
 
 ```sh
-swift run docgen AudioKit PianoRoll --output docs
+swift run docgen AudioKit PianoRoll --output output
 ```
