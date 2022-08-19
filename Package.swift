@@ -4,7 +4,10 @@ import PackageDescription
 let package = Package(
     name: "docgen",
     platforms: [
-       .macOS(.v12)
+       .macOS(.v11),
+    ],
+    products: [
+        .executable(name: "docgen", targets: ["docgen"]),
     ],
     dependencies: [
         .package(url: "https://github.com/apple/swift-argument-parser", from: "1.1.3"),
