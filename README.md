@@ -5,16 +5,26 @@
 To generate documentation, simply clone this repository and run the following command:
 
 ```sh
-./docgen.sh
+scripts/docgen.sh
 ```
 
-This example will generate a `.doccarchive` for all products defined in `docgen.sh` from their respective packages and output to the `./output` directory.
+This example will generate a `.doccarchive` for all products defined in [`scripts/docgen.sh`](/scripts/docgen.sh) from their respective packages and output to the `./output` directory.
 
 You can change the output directory by calling:
 
 ```sh
 ./docgen.sh <output_directory>
 ```
+
+## Preview Documentation
+
+This hasn't gotten a lot of attention yet so it may be broken, but you can preview the documentation by running the following command:
+
+```sh
+scripts/preview.sh
+```
+
+The command will output information on how to view it locally.
 
 ## Context
 
