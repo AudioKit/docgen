@@ -23,7 +23,6 @@ generate_archive() {
         generate-documentation \
         --product $product \
         --hosting-base-path "${product}" \
-        --transform-for-static-hosting \
         --output-path "${output_directory}/${product}.doccarchive"
 
     # TODO: Once we can confirm the above is working, try enabling the following flags:
