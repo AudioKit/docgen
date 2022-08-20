@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# Sources:
+#   - https://github.com/apple/swift-docc-plugin
+#   - https://apple.github.io/swift-docc-plugin/documentation/swiftdoccplugin/
+#   - https://apple.github.io/swift-docc-plugin/documentation/swiftdoccplugin/generating-documentation-for-hosting-online
+#   - https://www.swift.org/documentation/docc/
+
 # Define the output directory.
 output_directory=${1-'output'}
 
@@ -15,6 +21,7 @@ generate_archive() {
     swift package --allow-writing-to-directory $output_directory \
         generate-documentation \
         --product $product \
+        --disable-indexing \
         --output-path "${output_directory}/${product}.doccarchive"
 }
 
