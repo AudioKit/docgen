@@ -5,6 +5,7 @@
 #   - https://apple.github.io/swift-docc-plugin/documentation/swiftdoccplugin/
 #   - https://apple.github.io/swift-docc-plugin/documentation/swiftdoccplugin/generating-documentation-for-hosting-online
 #   - https://www.swift.org/documentation/docc/
+#   - https://www.swift.org/documentation/docc/distributing-documentation-to-other-developers
 
 # Define the output directory.
 output_directory=${1-'output'}
@@ -21,8 +22,11 @@ generate_archive() {
     swift package --allow-writing-to-directory $output_directory \
         generate-documentation \
         --product $product \
-        --disable-indexing \
+        --hosting-base-path "${product}" \
         --output-path "${output_directory}/${product}.doccarchive"
+
+    # TODO: Once we can confirm the above is working, try enabling the following flags:
+    # --disable-indexing # apparently only necessary for IDE documentation navigation
 }
 
 # Add new entries for every product here.
