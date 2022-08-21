@@ -22,7 +22,7 @@ generate_archive() {
     swift package --allow-writing-to-directory $output_directory \
         generate-documentation \
         --product $product \
-        --hosting-base-path "${product}" \
+        --hosting-base-path $product \
         --output-path "${output_directory}/${product}.doccarchive"
 
     # TODO: Once we can confirm the above is working, try enabling the following flags:
