@@ -1,6 +1,15 @@
-# AudioKitDocs
+# docgen
 
-## Generate Documentation
+`docgen` is a simple utility for generating documentation across AudioKit repositories. This allows us to keep our Vapor website lean without requiring large file storage, while also providing us with a local utility for seeing all of our documentation in one place.
+
+## Usage
+
+### Adding New Documentation
+
+1. Add the repository to the `Package.swift` just as you normally would.
+2. Add _each package product_ (could be one or multiple) you want to generate documentation for to the bottom of `scripts/docgen.sh`.
+
+### Generate Documentation
 
 To generate documentation, simply clone this repository and run the following command:
 
@@ -16,7 +25,7 @@ You can change the output directory by calling:
 ./docgen.sh <output_directory>
 ```
 
-## Preview Documentation
+### Preview Documentation
 
 This hasn't gotten a lot of attention yet so it may be broken, but you can preview the documentation by running the following command:
 
@@ -26,7 +35,7 @@ scripts/preview.sh
 
 The command will output information on how to view it locally.
 
-## Context
+## Additional Notes
 
 A standalone `Package.swift` in a repository without any `Sources` directory or `target` definitions is probably a weird sight. So why aren't we just passing URLs into a command and outputting the products?
 
