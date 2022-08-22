@@ -8,5 +8,8 @@ DerivedData/
 .swiftpm
 Package.resolved
 
+# This is where we output documentation by default.
+output
+
 # For the VS Code fans.
 .vscode
