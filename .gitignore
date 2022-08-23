@@ -12,4 +12,5 @@ Package.resolved
 .vscode
 
 # We don't commit our .doccarchive files to save space.
+docs/
 *.doccarchive

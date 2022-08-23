@@ -25,7 +25,8 @@ generate_archive() {
         --hosting-base-path $product \
         --output-path "${output_directory}/${product}.doccarchive"
 
-    zip -r "${output_directory}/docs.zip" "${output_directory}/${product}.doccarchive"
+    # TODO: To save space, we can make this file zip the archives instead. For example:
+    # zip -r "${output_directory}/docs.zip" "${output_directory}/${product}.doccarchive"
 
     # TODO: Once we can confirm the above is working, try enabling the following flags:
     # --disable-indexing # apparently only necessary for IDE documentation navigation
