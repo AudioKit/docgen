@@ -17,7 +17,7 @@ To generate documentation, simply clone this repository and run the following co
 scripts/docgen.sh
 ```
 
-This example will generate a `.doccarchive` for all products defined in [`scripts/docgen.sh`](/scripts/docgen.sh) from their respective packages and output to the `./output` directory.
+This example will generate a `.doccarchive` for all products defined in [`scripts/docgen.sh`](/scripts/docgen.sh) from their respective packages and output to the `./docs` directory.
 
 You can change the output directory by calling:
 
