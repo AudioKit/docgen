@@ -36,6 +36,7 @@ generate_archive() {
 # Note that this will only work with PRODUCTS within your dependency graph,
 # if you need to work with targets, you'll have to update this script.
 generate_archive AudioKit
+generate_archive STKAudioKit
 generate_archive Keyboard
 generate_archive PianoRoll
 generate_archive Tonic
