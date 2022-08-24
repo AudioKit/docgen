@@ -14,15 +14,15 @@
 To generate documentation, simply clone this repository and run the following command:
 
 ```sh
-scripts/docgen.sh
+scripts/generate.sh
 ```
 
-This example will generate a `.doccarchive` for all products defined in [`scripts/docgen.sh`](/scripts/docgen.sh) from their respective packages and output to the `./docs` directory.
+This example will generate a `.doccarchive` for all products defined in [`scripts/generate.sh`](/scripts/generate.sh) from their respective packages and output to the `./docs` directory.
 
 You can change the output directory by calling:
 
 ```sh
-./docgen.sh <output_directory>
+./scripts/generate.sh <output_directory>
 ```
 
 ### Preview Documentation
