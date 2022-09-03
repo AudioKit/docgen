@@ -41,6 +41,7 @@ generate_archive AudioKitUI
 
 generate_archive DevoloopAudioKit
 generate_archive DunneAudioKit
+generate_archive Flow
 generate_archive Keyboard
 
 generate_archive Microtonality

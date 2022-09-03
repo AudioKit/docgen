@@ -13,6 +13,7 @@ let package = Package(
 
         .package(url: "https://github.com/AudioKit/DevoloopAudioKit", from: "5.5.0"),
         .package(url: "https://github.com/AudioKit/DunneAudioKit", from: "5.5.0"),
+        .package(url: "https://github.com/AudioKit/Flow", from: "1.0.1"),
         .package(url: "https://github.com/AudioKit/Keyboard", from: "1.3.2"),
 
         .package(url: "https://github.com/AudioKit/Microtonality", from: "5.4.0"),
@@ -20,7 +21,7 @@ let package = Package(
         .package(url: "https://github.com/AudioKit/SoundpipeAudioKit", from: "5.5.0"),
 
         .package(url: "https://github.com/AudioKit/SporthAudioKit", from: "5.5.0"),
-        .package(url: "https://github.com/AudioKit/STKAudioKit", branch: "swiftbuild"),
+        .package(url: "https://github.com/AudioKit/STKAudioKit", from: "5.5.3"),
         .package(url: "https://github.com/AudioKit/Tonic", from: "1.0.6"),
     ]
 )
